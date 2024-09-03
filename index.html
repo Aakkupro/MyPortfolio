@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- box icon -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Include Typed.js from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <title>MyPortfolio</title>
+</head>
+
+<body>
+    <!-- loader -->
+     <div class="container" id="container1">
+      <div class="circle"></div>
+      <span>LOADING...</span>
+     </div>
+
+
+ <!-- Main Content -->
+ <div id="content" style="display: none;">
+
+  <header class="floating-header">
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" id="head_nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo ml-3" src="akkupro-white.png" alt="pagelogo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" id="custom-nav-link-color1" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="custom-nav-link-color2" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="custom-nav-link-color3" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="custom-nav-link-color4" href="#projects" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#foodorderingpage">FoodOrderingPage</a></li>
+              <li><a class="dropdown-item" href="#city_weather">City Weather</a></li>
+              <li><a class="dropdown-item" href="#tributepage">TributePage</a></li>
+              <li><a class="dropdown-item" href="#React_form">React_Form</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="custom-nav-link-color3" href="#resources">Learning Resources</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- home -->
+  <div class="container home mb-5" id="home">
+    <div class="row pt-5 pb-5 mt-5 mb-5">
+      <div class="col-12 col-lg-6 col-md-6 mt-5 d-flex align-items-center justify-content-center" id="intro">
+        <div>
+          <h3>Hello! there</h3>
+          <h2>I'm Aakanksha Prasad</h2>
+          <h1>I'm <span class="typing"></span></h1>
+          <div id="view_pdf">
+            <button onclick="view_pdf()" class="btn btn-primary mt-3 block" id="view_pdf_button">View Resume</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+        <img src="Myavtar.jpg" width="80%" alt="">
+      </div>
+    </div>
+    <!-- for resume view -->
+    <div class="row">
+      <div class="col-12">
+        <div id="pdfContainer" class="none mt-3 mb-4">
+          <embed src="Aakanksha_Prasad_CV.pdf" type="application/pdf" width="700" height="500">
+          <button onclick="view_close()" class="btn btn-primary mt-3">View Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12" id="about">
+          <h1>About Me</h1>
+          <p>I am a self-motivated and quick learner with degrees in computer science engineering and Bechulor of education. I bring a unique blend of technical expertise and educational insight to my work. I love exploring new technologies and have strong skills in HTML, CSS, and JavaScript. I create responsive and user-friendly web interfaces. I am good at solving problems, leading projects, and thinking creatively to deliver great results. I am always learning and staying updated on the latest trends in front-end development.</p>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+  <!-- skill -->
+  <div class="container skill" id="skills">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-6 col-lg-3 col-md-3">
+        <h1 id="skill_head">Skills</h1>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3 s1">
+        <h2>HTML</h2>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3 s1">
+        <h2>CSS</h2>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3 s1">
+        <h2>JavaScript</h2>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- cord  -->
+
+  <!-- Main Content -->
+  <div class="container mt-5 mb-5 pt-4 pb-4 project">
+    <div class="row">
+      <div class="col-12 mb-2">
+        <h1 id="project"><u>Projects</u></h1>
+      </div>
+      <div class="row">
+        <!-- Cards -->
+        <div class="col-md-6" id="city_weather">
+          <div class="card mb-4 shadow">
+            <img src="weather.png" class="card-img-top" alt="City_Weather_reportpage">
+            <div class="card-body">
+              <h5 class="card-title">City_WeatherCheck</h5>
+              <a href="https://todays-weather-with-audio-info.netlify.app" class="btn btn-primary">Have a look</a>
+              <button type="button" class="btn btn-outline-primary descriptionBtn" data-description="Developed a webpage that provides real-time weather updates for various locations. Used HTML & CSS for webpage structure and styling, FlexBox & grid for layout management, JavaScript for dynamic content handling, JSON & API Fetch for integrating the weather API to fetch and display real-time data, and Speech Synthesis to translate text information into voice.">Description</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4 shadow" id="foodorderingpage">
+            <img src="food.png" class="card-img-top" alt="Food_orderingpage">
+            <div class="card-body">
+              <h5 class="card-title">Food_OrderingPage</h5>
+              <!-- <p class="card-text"></p> -->
+              <a href="https://kitchen-foodordering.netlify.app" class="btn btn-primary">Have a look</a>
+              <button type="button" class="btn btn-outline-primary descriptionBtn" data-description="Designed and developed a responsive food ordering webpage using HTML, CSS, and Bootstrap, visually appealing transition effects for enhanced user interaction, and JavaScript to Enabled functionality for displaying a gift voucher popup when the Redeem Gift button is clicked.">Description</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" id="tributepage">
+          <div class="card mb-4 shadow">
+            <img src="tribute.png" class="card-img-top" alt="Sir_RatanTata_tributepage">
+            <div class="card-body">
+              <h5 class="card-title">Tribute_page</h5>
+              <a href="https://ratantatatributepage.netlify.app" class="btn btn-primary">Have a look</a>
+              <button type="button" class="btn btn-outline-primary descriptionBtn" data-description="I designed and developed a responsive tribute page for Sir Ratan Tata using simple HTML structure and CSS styling.">Description</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" id="React_form">
+          <div class="card mb-4 shadow">
+            <img src="weeklyFeedbackForm.png" class="card-img-top" alt="weeklyFeadbackForm">
+            <div class="card-body">
+              <h5 class="card-title">weeklyFeadbackForm</h5>
+              <a href="https://weeklyfeedbackform.netlify.app" class="btn btn-primary">Have a look</a>
+              <button type="button" class="btn btn-outline-primary descriptionBtn" data-description="I designed the first React project in our group, which involved creating a feedback form for mentors and mentees. Mentors fill out the form with details about their mentees, and the data is stored in a Google Sheet. An App Script then generates a well-written feedback paragraph using the information provided in the form, leveraging the Gemini API. The feedback is then automatically sent to the mentee via email.">Description</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Popup Modal -->
+<div id="descriptionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h4>Project Description</h4>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<!--free resources -->
+<div class="container" id="resources">
+  <div class="row">
+    <p>If you're interested in this field and want to learn, use these free resources</p>
+    <a href="course2.html"><button class="btn btn-primary">Learning Hub</button></a>
+  </div>
+</div>
+
+  <!-- Form -->
+  <section id="contact">
+    <h3>Let's work together</h3>
+    <h2>Contact me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="your good name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="abc123@xyz.com">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your messagehere"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <div class="d-flex justify-content-center">
+      <a href="mailto:aakankshaprasad6@gmail.com" ><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+      </svg></a>
+      <a href="https://www.linkedin.com/in/aakanksha-prasad-346a72307/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>
+      </a>
+      
+      
+    </div>
+    <p>&copy; 2024 Aakanksha Prasad</p>
+  </footer>
+ </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
