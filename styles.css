@@ -9,9 +9,16 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
+:root{
+    --first-color: #1b1b29;
+    --second-color: #2e2e3e;
+    --third-color: #4a4a6e;
+    --fourth-color: #6b6b8e;
+    --fifth-color: #8c8ca6;
+}
 
 body{
-    background-color: #33423f !important;
+    background-color: var(--second-color) !important;
 }
 /* body {
     line-height: 1.6;
@@ -82,7 +89,7 @@ body{
 }
 
 .floating-header {
-    background: #8a8abd;
+    background: var(--first-color);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -110,13 +117,12 @@ body{
 }
 
 #head_nav{
-    background-color: #333 !important;
-    
+    background-color: var(--fourth-color) !important;
 }
 .navbar-toggler{
     background-color: #fff !important;
 }
-#custom-nav-link-color1{
+/* #custom-nav-link-color1{
     color: #98afc4 !important;
     font-family: "Roboto";
 }
@@ -135,7 +141,7 @@ body{
 #custom-nav-link-color4{
     color: #98afc4;
     font-family: "Roboto";
-}
+} */
 .nav-item a:hover{
     background-color: white;
     border-radius: 5px;
@@ -146,11 +152,12 @@ body{
     width: 100px;
     height: 50px;
 }
+
 .typing{
-    color: #393989;
+    color: var(--first-color);
 }
 .home{
-    background-color: #8a8abd;
+    background-color: var(--third-color);
 }
 /* view pdf */
 .none {
@@ -160,7 +167,7 @@ body{
     display: block;
 }
 #about{
-    background-color: #9a979740;
+    background-color: var(--first-color);
     color: #ddd;
 }
 #about h1{
@@ -176,10 +183,10 @@ body{
     font-style:oblique;
 }
 .project{
-    background-color: #9a979740;
+    background-color: var(--first-color);
 }
 #skills{
-    background-color: #8a8abd;
+    background-color: var(--third-color);
 } 
 #skill_head{
     /* font-family: "Kalnia Glaze"; */
@@ -197,7 +204,7 @@ body{
 }
 
 #resources{
-    background-color: #8a8abd;
+    background-color: var(--third-color);
     font-size: larger;
     text-align: center;   
     margin-bottom: 40px;
@@ -211,7 +218,7 @@ section {
 }
 
 #contact {
-    background-color: #03030340;
+    /* background-color: #03030340; */
     padding: 50px 10px;
     color: white;
 }
@@ -219,7 +226,8 @@ section {
 #contact form {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--first-color);
+    color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px #0000001a;
     border-radius: 8px;
@@ -235,6 +243,7 @@ section {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    background-color: #888;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
@@ -260,6 +269,22 @@ section {
 #contact form button:hover {
     background: #e04a4a;
 }
+#pagination {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Align vertically (if needed) */
+    margin-top: 20px;        /* Optional: Space from the content */
+    background-color: var(--second-color);
+    color: white;
+}
+#pagination button{
+    background: none;
+    border: none;
+}
+.item {
+    display: none; /* Initially hide all items */
+  } 
+
 
 /* Responsive Design for Contact Form */
 @media (max-width: 768px) {
@@ -276,7 +301,7 @@ section {
 
 
 footer {
-    background-color: #63639a;
+    background-color: var(--first-color);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -289,7 +314,7 @@ footer {
     margin-bottom: 10px;
 }
 .bi :hover{
-    color: #6f6fab;
+    color: var(--third-color);
 }
 
 /* Modal styles */
