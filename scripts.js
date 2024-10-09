@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Update page number display
-    document.getElementById('page-num').textContent = page;
+    document.getElementById('page-num').textContent = ""+page+"/"+totalPages;
   }
 
   // Event listeners for pagination buttons
